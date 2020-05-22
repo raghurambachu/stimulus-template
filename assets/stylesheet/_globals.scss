@@ -1,0 +1,50 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: $font-family;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.align-center-flex{
+    display: flex;
+    align-items: center;
+}
+.just-flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.btn{
+    outline: 0;
+    border: 0;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.left,.right{
+    color: white;
+}
+.left{
+    grid-column: 1 / span 2;
+}
+.right{
+    grid-column: 3 / span 2;
+}
+.title{
+    font-size: 2.5rem;
+}

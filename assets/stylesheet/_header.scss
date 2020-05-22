@@ -1,0 +1,34 @@
+.header{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    a{
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        color: $grey;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: 2fr 4fr 4fr;
+        grid-template-areas:"logo gap navmenu";
+        align-items: center;
+        padding: 2em 0;
+        .logo{
+            justify-content: start;
+            color: black;
+            text-transform: capitalize;
+            grid-area: logo;
+            font-weight: 700;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);        }
+        .nav-menu{
+            display: grid;
+            justify-items: end;
+            grid-auto-flow: column;
+            grid-area: navmenu;
+            grid-column-gap: 2.5rem;
+        }
+        .nav-item{
+            align-self: end;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.general-section{
+   font-weight: 300;
+    .general-left{
+        background: url("../media/experience-img.jpg");
+        background-size: cover;
+    }
+    .general-right{
+        background: $red;
+        padding: 3.5em;
+        .title{
+            font-weight: 300;
+        }
+        .subtitle{
+            margin: 1em 0 3.5em;
+        }
+        .general-container{
+            margin-bottom: 2em;
+        }
+        .general-icon{
+            font-size: 2rem;
+            align-self: flex-start;
+        }
+        .general-description{
+            margin-left: 2.5em;
+        }
+        .general-period{
+            color: $grey;
+            align-self: center;
+            font-weight: 500;
+            margin-left: 0.5em;
+        }
+
+    }
+}
+

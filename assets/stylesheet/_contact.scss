@@ -1,0 +1,55 @@
+.contact-section{
+    color: rgba($color: $white, $alpha: 0.6);
+    .contact-left{
+        padding: 2.5em;
+        background: $red;
+        grid-column: 1 / span 2;
+        .subtitle{
+            margin: 1em 0 2em;
+        }
+        .contact-form-name,.contact-form-email,.message{
+            display: block;
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid $white;
+            outline: 0;
+            background: $red;
+            font-family: $font-family;
+            padding: 0.75em 1em;
+            margin-bottom: 1.5em;
+            font-size: 1.15rem;
+            &::placeholder{
+                color: $white;
+            }
+        }
+        .message{
+            resize: none;
+        }
+    }
+
+    .contact-center{
+        background: url("../media/contact-img.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .contact-right{
+        padding: 3.5em 4em;
+        background: rgba($color: $black, $alpha: 0.9);
+        i{
+            margin-right: 1em;
+        }
+        .contact-item{
+            margin-bottom: 0.75em;
+        }
+        a{
+            color: rgba($color: wheat, $alpha: 0.6);
+        }
+    }
+    .contact-title{
+        font-size: 1.35rem;
+        margin-bottom: 1em;
+    }
+    address{
+        margin-bottom: 3.5em;
+    }
+}

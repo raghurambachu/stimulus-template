@@ -1,0 +1,24 @@
+.secondary-section{
+   $numbers: 1,2,3,4;
+   $bgColors: $yellow,$red,$black,$white;
+   $colors: $white,$white,$white,$grey;
+   @each $number in $numbers {
+       .secondary-#{$number}{
+            grid-column: #{$number} / span 1;
+            background: nth($list: $bgColors, $n:index($numbers,$number));
+            color:nth($list: $colors,$n:index($numbers,$number));
+            padding: 2.8em;
+            & > *{
+                margin: 0.4em 0;
+            }
+            display: grid;
+            justify-items: center;
+       }
+   }
+   .ftaw{
+       font-size: 2.5rem;
+   }
+   h3{
+       font-size: 1.5rem;
+   }
+}

@@ -1,0 +1,42 @@
+.hero-section{
+    height: 100vh;
+    .hero-left{
+        background-image: url("../media/home-img.jpg");
+        background-position: center;
+        background-size: cover;
+        grid-column: 1 / span 2;
+    }
+    .hero-right{
+        grid-column: 3 / span 2;
+        background: $hero-right-color;
+        display: grid;
+        grid-gap: 1.5rem;
+        align-content: center;
+        padding: 3em;
+        h1{
+            font-size: 2.25rem;
+            font-weight: 300;
+        }
+        .hero-subtitle,.hero-content{
+            color: $grey;
+        }
+        .hero-subtitle{
+            font-size: 0.8rem;
+        }
+        .hero-content{
+            margin-bottom: 1.5em;
+        }
+    }
+    strong{
+        font-weight: 500;
+    }
+    .btn-started{
+        @extend .btn;
+        padding: 1em 2.5em;
+        border: 2.5px solid black;
+        text-transform: uppercase;
+        background: transparent;
+        justify-self: self-start;
+        font-weight: bold;
+    }
+}
