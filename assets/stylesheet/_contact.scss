@@ -25,12 +25,18 @@
         .message{
             resize: none;
         }
+        @media all and (max-width:545px){
+            grid-column: 1 / -1;
+        }
     }
 
     .contact-center{
         background: url("../media/contact-img.jpg");
         background-size: cover;
         background-position: center;
+        @media all and (max-width:768px){
+            grid-column: 1 / -1;
+        }
     }
     .contact-right{
         padding: 3.5em 4em;
@@ -43,6 +49,9 @@
         }
         a{
             color: rgba($color: wheat, $alpha: 0.6);
+        }
+        @media all and (max-width:768px){
+            grid-column: 1 / -1;
         }
     }
     .contact-title{

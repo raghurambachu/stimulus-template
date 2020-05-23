@@ -3,6 +3,9 @@
     .general-left{
         background: url("../media/experience-img.jpg");
         background-size: cover;
+        @media all and (max-width:768px){
+            height: 80vh;
+        }
     }
     .general-right{
         background: $red;

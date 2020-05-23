@@ -5,6 +5,11 @@
         background-position: center;
         background-size: cover;
         grid-column: 1 / span 2;
+        height: 100vh;
+        @media all and (max-width:768px){
+            grid-column: 1 / -1;
+            
+        }
     }
     .hero-right{
         grid-column: 3 / span 2;
@@ -26,6 +31,9 @@
         .hero-content{
             margin-bottom: 1.5em;
         }
+        @media all and (max-width:768px){
+            grid-column: 1 / -1;
+        }
     }
     strong{
         font-weight: 500;
@@ -38,5 +46,8 @@
         background: transparent;
         justify-self: self-start;
         font-weight: bold;
+    }
+    @media all and (max-width:768px){
+        height:auto;
     }
 }

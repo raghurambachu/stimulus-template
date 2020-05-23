@@ -3,5 +3,9 @@
     padding: 2em;
    .iframe{
     grid-column: 2 / span 2;
+    @media all and (max-width:768px){
+        grid-column: 1 / -1;
+    }
    }
+   
 }

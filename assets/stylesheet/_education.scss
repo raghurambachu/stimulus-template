@@ -30,5 +30,8 @@
     .education-right{
         background: url("../media/education-img.jpg");
         background-size: cover;
+        @media all and (max-width:768px){
+            height: 80vh;
+        }
     }
 }

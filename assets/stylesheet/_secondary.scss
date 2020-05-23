@@ -13,6 +13,9 @@
             }
             display: grid;
             justify-items: center;
+            @media all and (max-width:768px){
+                grid-column: 1 / -1;
+            }
        }
    }
    .ftaw{

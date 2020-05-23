@@ -4,4 +4,26 @@
     display: grid;
     justify-content: center;
     align-content: center;
+    small,.social-icons-menu{
+        grid-column: 2 / span 2;
+        text-align: center;
+    }
+    a{
+        color: $grey;
+    }
+    .social-icons-menu{
+        font-size: 1.2rem;
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        grid-column-gap: 2rem;
+    }
+    @media all and (max-width:768px){
+        font-size: 0.8em;
+        small,.social-icons-menu{
+            grid-column: 1 / -1;           
+        }
+        
+    }
+    
 }

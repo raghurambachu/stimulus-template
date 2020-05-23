@@ -13,22 +13,65 @@
         grid-template-areas:"logo gap navmenu";
         align-items: center;
         padding: 2em 0;
+        .toggle,.bars{
+            display: none;
+        }
         .logo{
             justify-content: start;
             color: black;
             text-transform: capitalize;
             grid-area: logo;
             font-weight: 700;
-            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);        }
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);  
+            position: relative;
+            z-index: 55;     
+         }
         .nav-menu{
             display: grid;
             justify-items: end;
             grid-auto-flow: column;
             grid-area: navmenu;
             grid-column-gap: 2.5rem;
+            @media all and (max-width:768px){
+                display: none;
+            }
         }
         .nav-item{
             align-self: end;
+        }
+    }
+    @media all and (max-width:768px){
+        padding-left: 2em;
+        padding-right: 2em;
+        background: $white;
+        .nav{
+            .bars{
+                display: block;
+                color: rgb(241, 195, 110);
+                grid-column: 3 / span 1;
+                justify-self: end;
+                font-size: 1.5rem;
+                z-index: 2;
+            }
+            .toggle:checked + .nav-menu{
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: wheat;
+                height: 100vh;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                grid-column: 1 / -1;
+                grid-auto-flow: row;
+                justify-items: center;
+                grid-gap: 2rem;
+                a{
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 }

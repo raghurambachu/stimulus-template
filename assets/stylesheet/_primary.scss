@@ -15,11 +15,17 @@
         .primary-content{
             color: $grey;
         }
+        @media all and (max-width:768px){
+            grid-column: 1 / -1;
+        }
     }
     .primary-center{
         grid-column: 3 / span 1;
         background: url("../media/about-img.jpg") center no-repeat;
         background-size: cover;
+        @media all and (max-width:768px){
+            grid-column: 1 / -1;
+        }
     }
     .primary-right{
         padding: 2.5em;
@@ -41,6 +47,9 @@
         }
         .progress-description{
             margin-bottom: -0.2em;
+        }
+        @media all and (max-width:768px){
+            grid-column: 1 / -1;
         }
     }
     //Specific to progress bar
